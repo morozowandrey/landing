@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(fonts/OpenSans-Light.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(fonts/OpenSans-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(fonts/OpenSans-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(fonts/OpenSans-ExtraBold.ttf);
+  font-weight: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  color: black;
+}
+
+.first-section {
+  background-color: #f5f2f2;
+  height: 690px;
+  display: grid;
+  grid-template-rows: 90px 1fr;
+  grid-template-columns: 625px 625px;
+  grid-template-areas: 'navigation navigation' 'first-block second-block';
+  padding: 40px;
+}
+
+.first-section__video-frame {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0 0 100px grey;
+  box-shadow: 0 0 100px grey;
+  height: 356px;
+  width: 551px;
+  background-color: #c2bfb1;
+  border: none;
+}
+
+.first-section__heading {
+  color: p-color;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.first-section__paragraph {
+  color: p-color;
+}
+
+.first-section__button {
+  background-color: #dc3131;
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 56px;
+  width: 227px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.first-section__button:hover {
+  background-color: black;
+  -webkit-transition: linear 0.2s;
+  -o-transition: linear 0.2s;
+  transition: linear 0.2s;
+}
+
+.first-section__first-block {
+  width: 1250px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  grid-area: navigation;
+}
+
+.first-section__second-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  grid-area: first-block;
+  padding: 50px 0;
+}
+
+.first-section__third-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-area: second-block;
+}
+
+.first-section__navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #313030;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 90px;
+  width: 1250px;
+}
+
+.first-section__link {
+  color: white;
+  padding: 40px 25px 31px 25px;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.first-section__link:hover {
+  background-color: #dd4142;
+  -webkit-transition: linear 0.2s;
+  -o-transition: linear 0.2s;
+  transition: linear 0.2s;
+}
+
+.second-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 690px;
+  width: 1250px;
+  border-bottom: 2px solid #ebebeb;
+  color: black;
+  margin-bottom: 10px;
+}

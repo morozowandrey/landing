@@ -1,0 +1,136 @@
+$main-color: white;
+$p-color: black;
+
+@import 'fonts';
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $main-color;
+	font-family: "Open Sans", sans-serif;
+}
+
+p {
+	color: $p-color;
+}
+
+.first-section {
+	background-color: #f5f2f2;
+	height: 690px;
+	display: grid;
+	grid-template-rows: 90px 1fr;
+	grid-template-columns: 625px 625px;
+	grid-template-areas: 
+		'navigation navigation'
+		'first-block second-block';
+	padding: 40px;
+
+	&__video-frame {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0 0 100px grey;
+		height: 356px;
+		width: 551px;
+		background-color: #c2bfb1;
+		border: none;
+	}
+
+	&__heading {
+		color: p-color;
+		font-family: "Open Sans", sans-serif;
+		font-weight: 900;
+		font-size: 60px;
+		text-transform: uppercase;
+	}
+
+	&__paragraph {
+		color: p-color;
+	}
+
+	&__button {
+		background-color: #dc3131;
+		border: none;
+		border-radius: 5px;
+		height: 56px;
+		width: 227px;
+		font-family: "Open Sans", sans-serif;
+		color: $main-color;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+		padding: 20px;
+
+		&:hover {
+			background-color: $p-color;
+			-webkit-transition: linear 0.2s;
+			-o-transition: linear 0.2s;
+			transition: linear 0.2s;
+		}
+	}
+
+	&__first-block {
+		width: 1250px;
+		display: flex;
+		justify-content: center;
+		grid-area: navigation;
+	}
+
+	&__second-block {
+		display: flex;
+		flex-flow: row wrap;
+		align-content: space-around;
+		grid-area: first-block;
+		padding: 50px 0;
+	}
+
+	&__third-block {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		grid-area: second-block;
+	}
+
+	&__navbar {
+		display: flex;
+		justify-content: center;
+		background-color: #313030;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		height: 90px;
+		width: 1250px;
+	}
+
+	&__link {
+		color: $main-color;
+		padding: 40px 25px 31px 25px;
+		float: left;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+	
+		&:hover {
+			background-color: #dd4142;
+			-webkit-transition: linear 0.2s;
+			-o-transition: linear 0.2s;
+			transition: linear 0.2s;
+		}
+	}
+}
+
+.second-section {
+	display: flex;
+	height: 690px;
+	width: 1250px;
+	border-bottom: 2px solid #ebebeb;
+	color: $p-color;
+	margin-bottom: 10px;
+}
